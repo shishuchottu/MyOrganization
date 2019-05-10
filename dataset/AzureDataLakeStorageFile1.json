@@ -1,0 +1,16 @@
+{
+	"name": "AzureDataLakeStorageFile1",
+	"properties": {
+		"type": "AzureBlobFSFile",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			}
+		}
+	}
+}
