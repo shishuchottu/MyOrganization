@@ -1,0 +1,9 @@
+{
+	"name": "RestResource1",
+	"properties": {
+		"type": "RestResource",
+		"typeProperties": {
+			"requestMethod": "GET"
+		}
+	}
+}
