@@ -13,8 +13,26 @@
 					"secureInput": false
 				},
 				"typeProperties": {
+					"source": {
+						"type": "SqlDWSource"
+					},
+					"sink": {
+						"type": "AzureBlobFSSink"
+					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "AzureSqlDWTable1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureDataLakeStorageFile1",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"parameters": {

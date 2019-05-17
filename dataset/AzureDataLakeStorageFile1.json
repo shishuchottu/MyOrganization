@@ -1,16 +1,22 @@
 {
 	"name": "AzureDataLakeStorageFile1",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
 		"type": "AzureBlobFSFile",
 		"typeProperties": {
 			"format": {
 				"type": "TextFormat",
-				"columnDelimiter": ",",
+				"columnDelimiter": "",
 				"rowDelimiter": "",
 				"treatEmptyAsNull": true,
 				"skipLineCount": 0,
-				"firstRowAsHeader": false
-			}
+				"firstRowAsHeader": true
+			},
+			"fileName": "dimaccounts.csv",
+			"folderPath": "hdfs-dwh"
 		}
 	}
 }
